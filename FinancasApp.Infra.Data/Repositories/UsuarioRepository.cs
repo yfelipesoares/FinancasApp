@@ -31,7 +31,6 @@ namespace FinancasApp.Infra.Data.Repositories
                     .Any(u => u.Email.Equals(email));
             }
         }
-
         public Usuario? Get(string email, string senha)
         {
            using (var dataContext = new DataContext())
